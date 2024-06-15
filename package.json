@@ -4,7 +4,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "bundle": "standard && browserify index.js -s WebDHT -d -o bundle.js -i ws",
     "start": "./server.js",
-    "prepublish": "npm run -s bundle"
+    "prepublish": "npm run -s bundle",
+    "build": "npm install && npm start 8000"
   },
   "dependencies": {
     "bittorrent-dht": "^7.3.0",
